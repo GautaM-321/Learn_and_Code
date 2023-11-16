@@ -33,15 +33,16 @@ var purifying = /** @class */ (function (_super) {
     };
     purifying.prototype.passingToKidneys = function () {
         setTimeout(function () {
-            console.log("drink is getting absorbed and passing to kidneys through blood vessels.....");
+            console.log(" passing to kidneys through blood vessels.....");
         }, 5000);
     };
     purifying.prototype.storingToGallBladder = function () {
         setTimeout(function () {
-            console.log("drink is getting stored in gallbladder.....");
+            console.log("getting stored in gallbladder.....");
         }, 10000);
     };
     return purifying;
 }(drinking));
 var purifyingObj = new purifying();
 purifyingObj.Urination();
+purifyingObj.storingDrinkInAbdomen();

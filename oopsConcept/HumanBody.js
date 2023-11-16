@@ -13,18 +13,18 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Human = /** @class */ (function () {
-    function Human(name, age) {
+var HumanBody = /** @class */ (function () {
+    function HumanBody(name, age) {
         this.name = name;
         this.age = age;
     }
-    Human.prototype.getAge = function () {
+    HumanBody.prototype.getAge = function () {
         return this.age;
     };
-    Human.prototype.getName = function () {
+    HumanBody.prototype.getName = function () {
         return this.name;
     };
-    return Human;
+    return HumanBody;
 }());
 var Heart = /** @class */ (function (_super) {
     __extends(Heart, _super);
@@ -40,7 +40,7 @@ var Heart = /** @class */ (function (_super) {
         return this.beatsPerMinute;
     };
     return Heart;
-}(Human));
+}(HumanBody));
 var Brain = /** @class */ (function (_super) {
     __extends(Brain, _super);
     function Brain(name, age, IQ) {
@@ -56,7 +56,7 @@ var Brain = /** @class */ (function (_super) {
         return this.IQ;
     };
     return Brain;
-}(Human));
+}(HumanBody));
 var heart = new Heart("Gautam", 30, 70);
 var brain = new Brain("Harsh", 25, 120);
 // Demonstrate abstraction and encapsulation

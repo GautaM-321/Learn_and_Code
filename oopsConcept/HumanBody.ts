@@ -1,4 +1,4 @@
-abstract class Human {
+abstract class HumanBody {
   private name: string;
   private age: number;
 
@@ -18,7 +18,7 @@ abstract class Human {
   }
 }
 
-class Heart extends Human {
+class Heart extends HumanBody {
   private beatsPerMinute: number;
 
   constructor(name: string, age: number, beatsPerMinute: number) {
@@ -40,7 +40,7 @@ class Heart extends Human {
   }
 }
 
-class Brain extends Human {
+class Brain extends HumanBody {
   private IQ: number;
 
   constructor(name: string, age: number, IQ: number) {
